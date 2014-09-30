@@ -1,0 +1,18 @@
+.wrap{
+	/*background: red;*/
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav>ul{
+	list-style-type: none;
+	display: table;
+	width: 100%;
+	padding-left: 0px;
+}
+
+nav>ul>li{
+	text-align: center;
+	width: 25%;
+	display: table-cell;
+}
