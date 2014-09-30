@@ -1,0 +1,22 @@
+/*Common*/
+	body{
+		font-family: Helvetica, sans-serif;
+	}
+	#ex p{
+		font-size: 150%;
+	}
+	#wrap{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+/*Selector precedence*/
+	#id1{
+		color: red;
+	}
+	p{
+		color: grey;
+	}
+	.class1{
+		color:green;
+	}
