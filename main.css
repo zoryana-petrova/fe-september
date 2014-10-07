@@ -3,9 +3,10 @@ body{
 	margin: 0;
 	margin-top: 62px;
 	background-image: url(images/Abstract3.png), url(images/Abstract4.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: left, right;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 }
 
 
@@ -23,6 +24,8 @@ light green #70D486
 	/*background: red;*/
 	width: 80%;
 	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 0px 50px antiquewhite;
 }
 
 h1, h2, h3, h4, h5{
@@ -31,10 +34,10 @@ h1, h2, h3, h4, h5{
 
 
 nav{
-	
 	position: fixed;
 	top: 0;
 	width: 80%;
+	box-shadow: 0px -10px 50px antiquewhite;
 }
 
 nav>ul{
@@ -110,4 +113,8 @@ section:nth-child(odd){
 section:nth-child(even){
 	background: rgba(255,194,135,0.5);
 	border-bottom: 10px solid rgb(255,194,135);
+}
+
+.space{
+	padding: 20px 10px 0;
 }
