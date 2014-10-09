@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<style>
+		body{
+			font-family: Helvetica, sans-serif;
+		}
+		#wrap{
+			width: 80%;
+			margin: 0 auto; 
+		}
+		.row{
+			overflow: hidden;
+		}
+		*[class^="col-"]{
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		.col-50{
+			width: 50%;
+			float: left;
+		}
+
+		.from-field{
+			padding: 10px;
+		}
+		label, input, small, textarea{
+			display: block;
+		}
+		input[type="checkbox"]{
+			-webkit-appearance: checkbox;
+		}
+		input[type="radio"]{
+			-webkit-appearance: radio;
+		}
+		input[type="range"] {
+			-webkit-appearance: slider-horizontal;
+		}
+		input[type="checkbox"], input[type="radio"]{
+			display: inline;
+			width: auto;
+		}
+		select, datalist{
+			width: 100%;
+			box-sizing: border-box;
+			margin-top: 5px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			font-family: Helvetica, sans-serif;
+			font-size: 100%;
+			padding: 2px;
+		}
+		article input, textarea{
+			width: 100%;
+			box-sizing: border-box;
+			margin-top: 5px;
+			-webkit-appearance: none;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			font-family: Helvetica, sans-serif;
+			font-size: 100%;
+			padding: 2px;
+		}
+		
+		article input:focus, textarea:focus{
+			outline: blue auto 5px;
+			
+		}
+		article input:valid{
+			border-color: green; 
+		}
+		article input:invalid{
+			border-color: red;
+		}
+		article input, select{
+			height: 30px;
+
+		}
+		small{
+			color:#ddd;
+		}
+		input[type="reset"], input[type="submit"]{
+			display: inline-block;
+			width: 200px;	
+			font-family: Helvetica, sans-serif;
+			font-size: 100%;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<section class="row">
+			<form action="" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+				<div class="form-field">
+					<h3>Form title</h3>
+				</div>
+				
+				<article class="col-50">
+					<div class="from-field">
+						<label for="name">Name: </label>
+						<input name="name" type="text" placeholder="name" required>
+						<small>(type: text, required)</small>
+					</div>
+								
+					<div class="from-field">
+						<label for="password">Password:
+						</label>
+						<input name="password" type="password" placeholder="password" maxlength="10" pattern=".{3,}" required>
+							<small>(type: password, maxlength="10" pattern=".{3,}", required)</small>
+					</div>
+								
+					<div class="from-field">
+						<label for="email">Email:
+						</label>
+						<input name="email" type="email" placeholder="email" required>
+							<small>(type: email, required)</small>
+					</div>
+
+					<div class="from-field">
+						<label for="datetime">Datetime:
+						</label>
+						<input name="datetime" type="datetime-local">
+							<small>(type: datetime)</small>
+					</div>
+
+					<div class="from-field">
+						<label for="file">File:
+						</label>
+						<input name="file" type="file">
+							<small>(type: file)</small>
+					</div>
+
+					<div class="from-field">
+						<label for="color">Color:
+						</label>
+						<input name="color" type="color">
+						<small>(type: color)</small>
+					</div>
+					
+					<div class="from-field">
+						<label for="checkbox">checkbox:
+						</label>
+						<input name="checkbox" value='1' type="checkbox"> Select 1
+						<input name="checkbox" value='2' type="checkbox"> Select 2
+						<input checked name="checkbox" value='3' type="checkbox"> Select 3
+						<small>(type: checkbox)</small>
+					</div>
+
+					<div class="from-field">
+						<label for="radio">radio:
+						</label>
+						<input checked name="radio" value='1' type="radio"> Select 1
+						<input name="radio" value='2' type="radio"> Select 2
+						<input name="radio" value='3' type="radio"> Select 3
+						<small>(type: radio)</small>
+					</div>
+					
+
+				</article>
+				
+				<article class="col-50">
+					<div class="from-field">
+						<label for="number">number:
+						</label>
+						<input name="number" type="number" min="10" max="100" step="5">
+						<small>(type: number, min="10" max="100" step="5")</small>
+					</div>
+					<div class="from-field">
+						<label for="range">range:
+						</label>
+						<input name="range" type="range" min="10" max="100" step="5">
+						<small>(type: range, min="10" max="100" step="5")</small>
+					</div>
+						
+					
+			    <div class="form-field">
+			    	<input type="range" name="b" value="50" /> +
+			    	<input type="number" name="a" value="10" /> =
+			    	<output name="result"></output>
+			    </div>
+
+					<div class="from-field">
+						<label for="url">url:
+						</label>
+						<input name="url" type="url" placeholder="http://example.com">
+						<small>(type: url)</small>
+					</div>
+					
+					<div class="from-field">
+						<label for="select">Select:
+						</label>
+						<select name="select">
+						  <option value="select" selected disabled>Select smth</option> 
+						  <option value="value1">Value 1</option> 
+						  <option value="value2" >Value 2</option>
+						  <option value="value3">Value 3</option>
+						</select>
+						<select name="select-groups">
+						  <optgroup label="Group 1">
+						    <option>Option 1.1</option>
+						  </optgroup> 
+						  <optgroup label="Group 2">
+						    <option>Option 2.1</option>
+						    <option>Option 2.2</option>
+						  </optgroup>
+						  <optgroup label="Group 3" disabled>
+						    <option>Option 3.1</option>
+						    <option>Option 3.2</option>
+						    <option>Option 3.3</option>
+						  </optgroup>
+						</select>
+						<small>(select)</small>
+					</div>
+					
+					<div class="from-field">
+						<label for="datalist">Datalist:
+						</label>
+						<input list="datalist" />
+						<datalist id="datalist">
+						  <option value="datalist" selected disabled>choose smth</option> 
+						  <option value="value1">Value 1</option> 
+						  <option value="value2" >Value 2</option>
+						  <option value="value3">Value 3</option>
+						</datalist>
+						<small>(datalist)</small>
+					</div>
+
+					<div class="form-field">
+						<label for="textarea">textarea:
+						</label>
+						<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+						<small>(textarea name="textarea" rows="10" cols="50")</small>
+					</div>
+
+				</article>
+			<input type="reset" value="reset">
+			<input type="submit" value="submit">
+			</form>
+		</section>
+	</div>
+</body>
+</html>
