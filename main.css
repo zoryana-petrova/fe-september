@@ -38,6 +38,7 @@ nav{
 	top: 0;
 	width: 80%;
 	box-shadow: 0px -10px 50px antiquewhite;
+	z-index: 99;
 }
 
 nav>ul{
@@ -46,6 +47,7 @@ nav>ul{
 	display: table;
 	width: 100%;
 	padding: 0;
+	background-color: #C56B15;
 }
 
 nav>ul>li{
@@ -55,16 +57,43 @@ nav>ul>li{
 	width: 25%;
 	display: table-cell;
 	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	transition: all 0.3s;
+}
+
+nav>ul>li:hover{
+	transform: translateY(10px);
+}
+
+nav>ul>li:after{
+	transition: width 0.3s;
 }
 
 nav>ul>li:hover:after {
-	background: #C56B15;
+	content: "";
+	background: rgba(197,107,21,0.5);
 	display: block;
-	height: 10px;
+	height: 100px;
 	width: 100%;
 	position: absolute;
-	bottom: 0px;
+	transform: rotate(25deg);
+	z-index:-1;
+	top: 0px;
+	left: 10px;
+}
+
+nav>ul>li:hover:before {
 	content: "";
+	background: bisque;
+	display: block;
+	height: 100px;
+	width: 90%;
+	position: absolute;
+	transform: rotate(-18deg);
+	z-index: -1;
+	top: 35px;
+	left: 20px;
 }
 
 nav>ul>li>a{

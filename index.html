@@ -9,6 +9,32 @@
 
 	<!-- My style -->
 	<link rel="stylesheet" href="main.css">
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Skills', 'level'],
+          ['HTML',     5],
+          ['CSS',      4],
+          ['JavaScript',  3],
+          ['PHP', 1]
+        ]);
+
+        var options = {
+          title: 'Skills',
+          pieHole: 0.4,
+          backgroundColor: 'transparent',
+          colors:["#C56B15", "#FFC287", "#0E246A", "#1C3485"],
+          legend: {position: 'bottom'}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
 	<div class="wrap">
@@ -53,13 +79,14 @@
 						<h3 class="section-title"><i class="fa fa-lg fa-briefcase"></i> Company 2</h3>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ducimus a nisi commodi ipsum maxime, omnis facere maiores saepe eaque.
 					</div>
-				</article>
-				<!-- /.col-50 -->
-				<article class="col-50">
 					<div class="space">
 						<h3 class="section-title"><i class="fa fa-lg fa-briefcase"></i> Company 3</h3>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita qui, fuga neque, explicabo, ea laudantium fugit sit, adipisci voluptate deserunt autem impedit eum nam! Quasi similique, magnam officiis sint delectus?
 					</div>
+				</article>
+				<!-- /.col-50 -->
+				<article class="col-50">
+					<div id="donutchart" style="width: 100%; height: 500px;"></div>
 				</article>
 				<!-- /.col-50 -->
 			</section>
