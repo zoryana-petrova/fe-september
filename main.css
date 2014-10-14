@@ -147,3 +147,64 @@ section:nth-child(even){
 .space{
 	padding: 20px 10px 0;
 }
+article input, textarea{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 5px;
+	-webkit-appearance: none;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-family: Helvetica, sans-serif;
+	font-size: 100%;
+	padding: 2px;
+}
+
+section:target{
+	padding-top: 62px;
+	-webkit-animation: pulse 1s;
+	-webkit-animation-delay: 0.2s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+input:focus, textarea:focus{
+	-webkit-animation: shake 0.8s;
+	/*-webkit-animation-delay: 0.2s;*/
+}
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+
+
+
+
+
