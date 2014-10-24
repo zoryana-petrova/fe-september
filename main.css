@@ -102,7 +102,7 @@ nav>ul>li>a{
 }
 
 .photo>img{
-	width: 200px;
+	width: 100%;
 	height: auto;
 }
 
@@ -204,7 +204,32 @@ input:focus, textarea:focus{
   }
 }
 
+@media (max-width: 620px){
+	.photo{
+		display: none;
+	}
+	#about>article.col-80{
+		width: 100%;
+	} 
+	#about>article.col-80 h1{
+		text-align: center;
+	}
+}
 
+
+@media (max-width: 720px){
+	body{
+		margin-top: 84px;
+	}
+
+}/*media 720*/
+
+@media (max-width: 815px){
+	.col-50{
+			width: 100%;
+		}
+
+}/*media <815*/
 
 
 

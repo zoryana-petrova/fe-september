@@ -1,0 +1,59 @@
+@color: red;
+@side: 80px;
+@long-side: round( @side * sqrt(3) );
+
+.hex(@side, @long-side, @color){
+	display: inline-block;
+	width: @side;
+	height: @long-side;
+	position: absolute;
+	top:0;
+  transform-origin: (@side / 2) -@side; 
+
+	background: @color;
+
+  &:before, &:after{
+			content: "";
+			width: @side;
+			height: @long-side;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: @color;
+  }
+
+  &:before{
+	  transform: rotate(60deg);
+  }
+	&:after{
+    transform: rotate(120deg);
+    
+	}
+
+}/*.hex*/
+
+.rotate-hex(@n, @i: 1, @d: 1) when (@i =< @n){
+	&:nth-child(@{i}){
+		transform: rotate(@d * 60deg);
+	}
+
+	.rotate-hex(@n, (@i + 1), (@d + 1));
+}
+
+
+.hex{
+	.hex(@side, @long-side, @color);
+	.rotate-hex(6, 2, 1);
+	// .rotate-hex(4, 4, 1);
+	@media (max-width: 768px) {
+		.hex(@side * 0.55, @long-side * 0.55, @color);
+  }
+  @media (min-width: 769px) and (max-width: 992px) {
+		.hex(@side * 0.70, @long-side * 0.70, @color);
+  }
+  @media (min-width: 993px) and (max-width: 1200px) {
+		.hex(@side * 0.85, @long-side * 0.85, @color);
+  }
+	
+}
