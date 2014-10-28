@@ -3,6 +3,30 @@ body{
 	font-size: 160%;
 }
 
+a{
+	color: darken(@green, 10%);
+
+	&:hover{
+		color: darken(@green, 20%);
+	}
+
+	&:visited{
+		color: darken(@green, 30%);
+	}
+}
+
+footer{
+	border-top: 5px solid @green;
+}
+
+.bkg-green{
+	background-color: @green;
+}
+
+.pad-top{
+	padding-top: 20px;
+}
+
 .my-navbar{
 	border-radius: 0px;
 	min-height: 0px;
@@ -11,6 +35,12 @@ body{
 
 	ul{
 		li{
+			&.active{
+				a{
+					background: @dark-green-1;
+				}
+			}
+			
 			a{
 				color: #191919;
 				font-family: @h-font;
@@ -18,9 +48,15 @@ body{
 				&:hover{
 					background: @dark-green-1;
 				}
-				
+
 			}
 		}
+	}
+}
+
+.cart{
+	span{
+		vertical-align: top;
 	}
 }
 
