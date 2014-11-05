@@ -1,0 +1,16 @@
+#logo{
+	width: 60px;
+	height: 60px;
+	border: 7px solid @green;
+	border-radius: 50%;
+	position: relative;
+	i{
+		.center();
+		transform: translate(-55%, -55%);
+	}
+	transition: all 0.3s;	
+
+	&:hover{
+		transform: rotate(360deg) scale(1.2);
+	}
+}

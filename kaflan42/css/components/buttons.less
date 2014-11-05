@@ -1,0 +1,22 @@
+.btn-white{
+	.btn-common(white, @green);
+
+	&:hover{
+		.btn-common(fade(@light-green-1, 50%), @dark-green);
+	}
+}
+
+.btn-green{
+	.btn-common(@green, @dark-green, white);
+
+	&:hover{
+		.btn-common(@dark-green, darken(@dark-green, 10%), darken(white, 10%));
+	}
+}
+
+/*mixings*/
+.btn-common(@bckg, @border-color, @color: @font-color){
+	background: @bckg;
+	border-color: @border-color;
+	color: @color;
+}
