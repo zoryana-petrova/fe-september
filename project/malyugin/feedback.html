@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Music SHOP</title>
+        <meta name="description" content="music shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+        <link rel="stylesheet" href="css/main.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+                <!-- section top -->
+                    <section id="top">
+                        <div class="container">
+                            <div class="row rel">
+                                <div class="col-lg-3">
+                                    <div id="logo">
+                                        <i class="fa fa-3x fa-music"></i>
+                                    </div>
+                                </div> <!-- Brand -->
+                                <div class="col-sm-6 ">
+                                    <form class="form-horizontal" role="search">
+                                      <div class="col-xs-8">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                      </div>
+                                          <div class="col-xs-4">
+                                            <button type="submit" class="btn btn-white">Search</button>
+                                          </div>
+                                    </form>
+                                </div> <!-- Search -->
+                                <div class="col-sm-3 text-right cart">
+                                    <i class="fa fa-2x fa-shopping-cart"></i>
+                                    <span class="badge bkg-green">0</span>
+                                </div> <!-- Cart -->
+                                <!-- /.col- -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container -->
+                    </section> 
+                <!-- section top -->
+          
+                <!-- Navbar -->
+                    <nav class="my-navbar navbar " role="navigation">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav nav-justified">
+                            <li><a class="active" href="">Главная</a></li>
+                            <li><a href="/delivery.html">Доставка</a></li>
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li><a href="/about.html">О нас</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+                          </ul>
+                          
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>                   
+                <!-- /Navbar -->
+
+                <!-- Content -->
+                    <section>
+                        <div class="container-fluid">
+                            <div class="row">
+                              <!-- Left menu -->
+                                <aside class="col-sm-2">
+                                <ul id="accordion" class="nav nav-pills nav-stacked">
+                                  <li class="panel"><a data-toggle="collapse" data-parent="#accordion" href="#artists">Artists <span class="caret"></span></a>
+                                  
+                                    <div id="artists" class="nav-collapse collapse">
+                                      <ul class="list-unstyled">
+                                        <li>A-M</li>
+                                        <li>N-P</li>
+                                        <li>O-9</li>
+                                      </ul>
+                                    </div>
+                                  </li><!-- #artists -->
+                                  <li class="panel"><a data-toggle="collapse" data-parent="#accordion" href="#genres">Genres <span class="caret"></span></a>
+                                    <div id="genres" class="collapse">
+                                      <ul class="list-unstyled">
+                                        <li>A-M</li>
+                                        <li>N-P</li>
+                                        <li>O-9</li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="panel"><a data-toggle="collapse" data-parent="#accordion" href="#year">Year <span class="caret"></span></a>
+                                      <div id="year" class="nav-collapse collapse">
+                                      <ul class="list-unstyled">
+                                        <li>2011</li>
+                                        <li>2012</li>
+                                        <li>2013</li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="panel"><a data-toggle="collapse" data-parent="#accordion" href="#country">Country <span class="caret"></span></a>
+                                    <div id="country" class="nav-collapse collapse">
+                                      <ul class="list-unstyled">
+                                        <li>Ukraine</li>
+                                        <li>Russia</li>
+                                        <li>England</li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="panel"><a data-toggle="collapse" data-parent="#accordion" href="#format">Format <span class="caret"></span></a>
+                                    <div id="format" class="nav-collapse collapse">
+                                      <ul class="list-unstyled">
+                                        <li>Rock</li>
+                                        <li>Classic</li>
+                                        <li>Pop</li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                            </aside>
+                            <!-- /Left menu -->
+                                <!-- /.col-sm-2 -->
+                                
+                                <article class="col-sm-8">
+                                  <article class="col-sm-12 pad-top">
+                                        <div class="row pad-top">
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://allreport.ru/wp-content/uploads/2009/06/cover.jpg" alt="...">
+                                            </a>
+
+                                            <div class="text-center">
+                                              <button type="button" class="btn btn-success">Buy album</button>
+                                            </div>
+                                            <div class="text-center pad-top">
+                                              <i class="fa fa-star"></i>
+                                              <i class="fa fa-star"></i>
+                                              <i class="fa fa-star"></i>
+                                              <i class="fa fa-star-half-full"></i>
+                                              <i class="fa fa-star-o"></i>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="col-xs-6 col-md-9">
+                                            <h3>Album</h3>
+                                            <table class="table table-striped">
+                                                <tr>
+                                                  <th>Song title</th>
+                                                  <th>Listen song</th>
+                                                  <th>Buy</th>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Kitty Litter»</td>
+                                                  <td>
+                                                    <div class="progress">
+                                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                        <span class="sr-only">40% Complete (success)</span>
+                                                      </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Ashtray Heart»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Battle for the Sun»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«For What It's Worth»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Devil in the Details»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Bright Lights»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Speak in Tongues»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«The Never-Ending Why»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>«Julien»</td>
+                                                  <td><a href="#"><i class="fa fa-2x fa-play-circle-o"></i></a></td>
+                                                  <td>10$</td>
+                                                </tr>
+                                            </table>
+                                          </div>
+                                          
+                                        </div>
+                                  </article>
+                                  <!-- Feedbacks -->
+                                  <h3 class="text-center">Feedbacks</h3>
+                                    <div class="row pad-top">
+                                        <div class="col-sm-4">
+                                              <div class="media">
+                                                <a class="media-left media-top" href="#">
+                                                  <img class="img-circle" src="http://images.equipboard.com/uploads/user/image/6840/small_James-Hetfield-Metallica.jpg?v=1414552549" alt="...">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="media-heading">Lorem ipsum</h4>
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, optio.
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="media">
+                                                <a class="media-left media-top" href="#">
+                                                  <img class="img-circle" src="http://images.equipboard.com/uploads/user/image/6840/small_James-Hetfield-Metallica.jpg?v=1414552549" alt="...">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="media-heading">Lorem ipsum</h4>
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, optio.
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="media">
+                                                <a class="media-left media-top" href="#">
+                                                  <img class="img-circle" src="http://images.equipboard.com/uploads/user/image/6840/small_James-Hetfield-Metallica.jpg?v=1414552549" alt="...">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="media-heading">Lorem ipsum</h4>
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, optio.
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-8 pad-top">
+                                            <button type="button" class="btn btn-success">Leave feedback</button>
+                                          </div>
+                                    </div>
+                                  <!-- /Feedbacks -->
+                                  <!-- All artist albums -->
+                                    <article class="col-sm-12 pad-top">
+                                      <h3 class="text-center">All artist albums</h3>
+                                        <div class="row pad-top">
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://allreport.ru/wp-content/uploads/2009/06/cover.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://allreport.ru/wp-content/uploads/2009/06/cover.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://allreport.ru/wp-content/uploads/2009/06/cover.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://allreport.ru/wp-content/uploads/2009/06/cover.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                        </div>
+                                    </article>
+                                    <!-- /All artist albums -->
+                                    <!-- Already listened -->
+                                    <article class="col-sm-12 pad-top">
+                                      <h3 class="text-center">Already listened</h3>
+                                        <div class="row pad-top">
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://altwall.net/img/rhcp/11_1024.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://altwall.net/img/rhcp/11_1024.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://altwall.net/img/rhcp/11_1024.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                          <div class="col-xs-6 col-md-3">
+                                            <a href="#" class="thumbnail">
+                                              <img src="http://altwall.net/img/rhcp/11_1024.jpg" alt="...">
+                                            </a>
+                                          </div>
+                                        </div>
+                                    </article>
+                                    <!-- /Already listened -->
+                                </article>
+                                <aside class="col-sm-2 pad-top news">
+                                    <h3>Similar</h3>
+                                      <div class="row">
+                                        <div class="col-xs-12 col-md-12">
+                                          <a href="#" class="thumbnail">
+                                            <img src="http://mp3lemon.net/image/albums/42265_366064s.jpg" alt="...">
+                                          </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-12 similar-btn">
+                                          <a href="#" class="thumbnail">
+                                            <img src="http://mp3lemon.net/image/albums/42265_366064s.jpg" alt="...">
+                                          </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-12">
+                                          <a href="#" class="thumbnail">
+                                            <img src="http://mp3lemon.net/image/albums/42265_366064s.jpg" alt="...">
+                                          </a>
+                                        </div>
+                                      </div>
+                                </aside>
+                                <!-- /Similar -->
+                            </div>
+                            <!-- /.col-sm-9 -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </section>
+                <!-- /Content -->
+
+
+                <!-- Footer -->
+                    <footer class="pad-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Facebook</a></li>
+                                        <li><a href="">Gplus</a></li>
+                                        <li><a href="">Twitter</a></li>
+                                        <li><a href="">Instagram</a></li>
+                                    </ul>
+                                </div> <!-- Social -->
+                                <div class="col-sm-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Popular</a></li>
+                                        <li><a href="">Ololo</a></li>
+                                        <li><a href="">Player</a></li>
+                                        <li><a href="">Smth</a></li>
+                                    </ul>
+                                </div> <!-- Page Link -->
+                                <div class="col-sm-4">
+                                    <ul class="list-unstyled">
+                                        <li>Address:</li>
+                                        <li>Email:</li>
+                                        <li>Skype:</li>
+                                        <li>Phone:</li>
+                                    </ul>
+                                </div> <!-- Contacts -->
+                                <!-- /.col- -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </footer>
+                <!-- /Footer -->
+           
+
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
