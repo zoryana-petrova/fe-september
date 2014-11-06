@@ -110,11 +110,123 @@
           <!-- /.col-sm-3 -->
           <article class="col-sm-8">
           <!-- Album -->
-          
+            <div class="row album">
+              <div class="col-sm-3">
+                <div class="">
+                  <img class="img-responsive" src="http://s00.yaplakal.com/pics/pics_original/5/3/7/488735.jpg" alt="">
+                </div>
+                <div class="pad-top">
+                  <button class="btn btn-green">Buy 9.99$</button>
+                </div>
+                <div class="stars pad-top">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+              </div>
+              <!-- /.col-3 -->
+              <div class="col-sm-9">
+                <h3>Эбонитовый колотун</h3>
+                <div class="table-responsive">
+                  <table class="album-table table table-striped table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Listen</th>
+                        <th>Buy</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Танцуй</td>
+                        <td><audio src="song.mp3" controls></audio></td>
+                        <td>0.99¢</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>ololo</td>
+                        <td>...</td>
+                        <td>0.99¢</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>ololo</td>
+                        <td>...</td>
+                        <td>0.99¢</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>ololo</td>
+                        <td>...</td>
+                        <td>0.99¢</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- /.col-9 -->
+            </div>
+            <!-- /.row album -->
+
           <!-- All by artist -->
 
           <!-- Reviews -->
+          <div class="row reviews">
+            <div class="col-sm-4">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/d/d3/User_Circle.png" alt="" class="img-circle img-responsive">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="add-review">
+            <button class="btn btn-green" data-toggle="modal" data-target="#model-signup">
+              Add review
+            </button>
 
+          <!-- MODAL -->
+            <div class="modal fade" id="model-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#model-addreview">Sign Up</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <div class="modal fade" id="model-addreview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add review</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+          </div>
           <!-- Recently viewed -->
 
           </article>
