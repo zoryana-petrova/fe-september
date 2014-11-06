@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Music-shop</title>
+		<link href="css/flexslider.css" type="text/css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		
+		<style>
+			.wrapper{
+				width: 960px;
+				margin: 30px auto;
+			}
+			.slides .item{
+				margin-left: 20px;
+			}
+			.slides li:first-child{
+				margin-left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="flexslider">
+				<ul class="slides">
+					<li class="item">
+						<img src="images/album1.jpg" />
+					</li>
+					<li class="item">
+						<img src="images/album2.jpg" />
+					</li>
+					<li class="item">
+						<img src="images/album3.jpg" />
+					</li>
+					<li class="item">
+						<img src="images/album4.jpg" />
+					</li>
+					<li class="item">
+						<img src="images/album5.jpg" />
+					</li>
+					<li class="item">
+						<img src="images/album6.jpg" />
+					</li>
+					<!-- items mirrored twice, total of 12 -->
+				</ul>
+			</div>
+		</div>
+		
+		
+		<script>
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					animationLoop: false,
+					itemWidth: 300,
+					itemMargin: 20,
+					maxItems: 3
+				});
+			});
+		</script>
+	</body>
+</html>
