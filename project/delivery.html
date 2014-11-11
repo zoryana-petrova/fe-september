@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Music shop</title>
+        <meta name="description" content="music shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      
+      <section id="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div id="logo">
+                <i class="fa fa-3x fa-music"></i>
+              </div>
+            </div><!-- /brand -->
+            
+            <div class="col-sm-6">
+              <form class="form-horizontal" role="search">
+                <div class="col-xs-8">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <div class="col-xs-4">
+                  <button type="submit" class="btn btn-white">Search</button>
+                </div>
+              </form>
+            </div><!-- /search -->
+        
+            <div class="col-sm-3 text-right cart">
+              <i class="fa fa-2x fa-shopping-cart"></i> <span class="badge bkg-green">0</span>
+            </div><!-- /cart -->
+            <!-- /.col- -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </section><!-- /section top -->
+        
+    <!-- Navbar -->
+      <nav class="my-navbar navbar" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-justified">
+              <li class="active"><a href="">Main</a></li>
+              <li><a href="/delivery.html">Delivery</a></li>
+              <li><a href="/goods.html">Goods</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!-- /Navbar -->
+    
+    <!-- Content -->
+
+    <section class="container">
+      <div class="row">
+        <article id="myTab" class="col-sm-10">
+          <!-- Nav tabs -->
+          <ul id="navtabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#cart" role="tab" data-toggle="tab">Cart</a></li>
+            <li role="presentation"><a href="#contact-info" role="tab" data-toggle="tab">Contact info</a></li>
+            <li role="presentation"><a href="#confirm" role="tab" data-toggle="tab">Confirm</a></li>
+            
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="cart">
+              <h3>Cart</h3>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Item Name</th>
+                    <th>Q-ty</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Вася Ложкин</td>
+                    <td>1</td>
+                    <td>0.99¢</td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan="2">Total</td>
+                    <td>1</td>
+                    <td>0.99¢</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <a href="#contact-info" role="tab" data-toggle="tab" data-go="next" class="btn btn-green">Next</a>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="contact-info">
+              <h3>Contact info</h3>
+              <form role="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+                <div class="pull-right">
+                  <a href="#cart" data-go="next" class="btn btn-white">Prev</a> 
+                  <a href="#confirm" data-go="next" class="btn btn-green">Next</a>
+                </div>
+              </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="confirm">
+              <div class="alert alert-success" role="alert" style="display:none;">
+                Thank you!!!
+              <!-- кнопка-закрывашка -->
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+              </button>
+              </div>
+              <h3>Confirm</h3>
+              <p>
+                <a class="tooltips" href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolores, rerum <a href="#ololo">quibusdam</a> tempore qui. Architecto quae consequuntur accusantium eveniet debitis.
+
+                <a class="tooltips" href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a>
+
+              </p>
+
+              <button id="order" class="btn btn-green">Confirm</button>
+            </div>
+            
+          </div>
+
+        </article>
+        <!-- /.col-sm-10 -->
+        <aside class="col-sm-2"></aside>
+        <!-- /.col-sm-2 -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.container -->
+
+
+    <!-- /Content -->
+    
+    <!-- Footer -->
+      <footer class="pad-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <ul class="list-unstyled">
+                <li><a href="#facebook">facebook</a></li>
+                <li><a href="#gplus">gplus</a></li>
+                <li><a href="#twitter">twitter</a></li>
+                <li><a href="#instagram">instagram</a></li>
+              </ul>
+            </div><!-- social -->
+            <div class="col-sm-4">
+              <ul class="list-unstyled">
+                <li><a href="popular">popular</a></li>
+                <li><a href="ololo">ololo</a></li>
+                <li><a href="player">player</a></li>
+                <li><a href="smth else">smth else</a></li>
+              </ul>
+            </div><!-- pages links -->
+            <div class="col-sm-4">
+              <ul class="list-unstyled">
+                <li>address:</li>
+                <li>email:</li>
+                <li>skype:</li>
+                <li>phone</li>
+              </ul>
+            </div><!-- contacts -->
+            <!-- /.col- -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </footer>
+    <!-- /Footer -->
+
+
+      <script src="js/vendor/jquery-1.11.1.min.js"></script>
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+      <script src="js/main.js"></script>
+    </body>
+</html>
